@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>Hola estas conectado</h1>
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCg8KQZKJXoBcguw6awKGadlwAO-N_ZBAA",
+    authDomain: "proyecto-1530489171758.firebaseapp.com",
+    databaseURL: "https://proyecto-1530489171758.firebaseio.com",
+    projectId: "proyecto-1530489171758",
+    storageBucket: "proyecto-1530489171758.appspot.com",
+    messagingSenderId: "931431273531"
+  };
+  firebase.initializeApp(config);
+
+  var Hola = document.getElementById('Hola');
+  var dbreferencia= firebase.database().ref().child('text');
+
+  dbreferencia.on('value', snap => Hola.innerText = snap.val());
+</script>
+</body>
+</html>
