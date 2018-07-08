@@ -3,28 +3,48 @@
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <div class="row"> <ion-col col-2></ion-col> <ion-col col-6><h1 style="color: blueviolet;">Healp 4 U</h1></ion-col></div>
+      <div class="row"> <ion-col col-2></ion-col> <ion-col col-6><h1 style="color: blueviolet;,font-family: : verdena">Health4U</h1></ion-col></div>
     </ion-navbar>
   </ion-header>
   
-  <ion-content padding>
+  <ion-content paclearInputing>
+   
       <form id="alta1" action="alta.html" method="POST">
-    <label >user</label>
-    <ion-input  placeholder="user.."></ion-input>
-    <label>password</label>
-    <ion-input placeholder="password.."></ion-input>
-    <label>numero</label>
-    <ion-input type="number" placeholder="user.."></ion-input>
-    <label>nombre(s)</label>
-    <ion-input placeholder="nombre.."></ion-input>
-    <label>apellido paterno</label>
-    <ion-input placeholder="apellido.."></ion-input>
-    <label>apellido materno</label>
-    <ion-input placeholder="apellido.."></ion-input>
-    <label>matricula</label>
-    <ion-input placeholder="matricula.."></ion-input>
-    <label>contacto de emergencia</label>
-    <ion-input placeholder="contacto de emergencia.."></ion-input>
-   <button ion-button primary>alta</button>
+         <ion-list>
+   <ion-item>
+    <ion-label color="danger" floating>user</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label color="danger" floating>password</ion-label>
+    <ion-input clearInput type="password"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>numero</ion-label>
+    <ion-input clearInput type="number"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>apellido paterno</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>apellido materno</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>modelo del auto</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>placas</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="danger" floating>contacto de emergencia</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+  </ion-list>
+    
+   <button ion-button block round primary>alta</button>
   </form>
   </ion-content>

@@ -15,15 +15,26 @@
   
   <ion-content padding>
       <form id="alta1" action="alta.html" method="POST">
-    <label>password</label><input type="checkbox" id="si"/>
-    <ion-input placeholder="password.."></ion-input> 
-    <label>numero</label><input type="checkbox" id="si"/>
-    <ion-input type="number" placeholder="user.."></ion-input> 
-    <label>matricula</label><input type="checkbox" id="si"/>
-    <ion-input placeholder="matricula.."></ion-input> 
-    <label>contacto de emergencia</label><input type="checkbox" id="si"/>
-    <ion-input placeholder="contacto de emergencia.."></ion-input> 
-   <button ion-button primary>cambio</button>
+            <ion-list>
+    <ion-item>
+    <ion-label color="primary" floating>password</ion-label>
+    <ion-input clearInput type="password"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="primary" floating>numero</ion-label>
+    <ion-input clearInput type="number"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label color="primary" floating>placas</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label color="primary" floating>contacto de emergencia</ion-label>
+    <ion-input clearInput></ion-input>
+  </ion-item>
+  </ion-list>
+   <button ion-button secound round block>cambio</button>
   </form>
   </ion-content>
   
